@@ -1,11 +1,11 @@
-import Flask
-import render_template from flask
+from flask import Flask, render_template
 
-class App:
-    def __name__(self)
+app = Flask(__name__)
+
+
+@app.route('/')
+@app.route('/jobs')
 
 
 def jobs():
-
-    return(render_template('index.html'))
-
+    return render_template('index.html')
